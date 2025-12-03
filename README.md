@@ -37,4 +37,12 @@ These instructions assume TORCS is already installed following the official comp
 - TORCS installed and configured  
   *(tested with the torcs_CAR package supplied in competition resources)*  
 - Python **3.14.0** or newer  
-- `gym_torcs` located at:  
+- `gym_torcs` located at:
+
+---
+
+## 📊 Competition Results
+
+- **🏆 Competition Rank:** 1st Place  
+- **⏱️ Best Lap Time:** 02:39.82  
+- **📈 Average Speed:** 139.5 km/h

@@ -1,56 +1,40 @@
-🏎️ TORCS Autonomous Racing AI Competition
+# 🏎️ Cardiff Autonomous Racing — TORCS AI Competition (2025)
 
-🏆 Cardiff University Autonomous Racing Competition Submission:
+This repository contains my submission for the **Cardiff University Autonomous Racing TORCS Competition (2025)**.  
+It includes a custom autonomous racing agent built in Python, designed to navigate the challenging **3.6km Corkscrew** track for **three consecutive laps** inside the TORCS simulator.
 
-This repository contains the source code for an autonomous racing agent developed in Python for the Cardiff University Autonomous Racing TORCS Competition (2025).
+---
 
-The project's objective was to develop a robust control or learning algorithm to successfully navigate the high-complexity, 3.6km "Corkscrew" track for three consecutive laps in the Open Source Racing Car Simulator (TORCS).
+## ✨ Key Features
 
-✨ Key Features:
+### Autonomous Agent Logic
+Custom control logic and a state-driven behaviour system (or RL algorithm such as DDPG/A2C depending on implementation).
 
-Agent Core: Custom control logic and state machine (or a specific RL algorithm like DDPG/A2C if applicable) implemented in Python.
+### Environment Integration
+Uses **gym_torcs** to communicate with the TORCS simulation, process sensor data, and apply control actions.
 
-Environment Interaction: Utilizes the gym_torcs interface to connect the Python agent to the TORCS simulation environment.
+### Track-Optimised Behaviour
+Specifically tuned for the **Corkscrew** track to balance high speed, stability, and safe cornering.
 
-Track Focus: Optimized specifically for high-speed, safe traversal of the demanding Corkscrew track.
+---
 
-⚙️ Technology Stack:
+## ⚙️ Technology Stack
 
-+ TORCS (The Open Racing Car Simulator)
+| Component | Description |
+|----------|-------------|
+| **TORCS (The Open Racing Car Simulator)** | Physics engine and racing simulation used for development and testing. |
+| **gym_torcs** | Python wrapper for communication, state retrieval, and control signalling. |
+| **Python 3.14.0** | Primary programming language for the agent logic and scripts. |
 
-+ Provides the physics and environment.
+---
 
-+ gym_torcs
+## 🚀 Getting Started
 
-+ Python wrapper for communication and state management.
+These instructions assume TORCS is already installed following the official competition setup.
 
-+ Language = Python 3.14.0 this was Primary language for the agent and training scripts.
+### Prerequisites
 
-🚀 Getting Started:
-
-These instructions assume you have the TORCS environment already set up as per the competition guidelines. This section focuses on running the Python agent client.
-
-Prerequisites:
-
-+ TORCS installed and configured (Tested with the torcs_CAR package provided).
-
-+ Python 3.14.0 or newer.
-
-+ Running the Agent
-
-+ Start TORCS Server - Navigate to your TORCS installation (C:\torcs\torcs) and launch wtorcs.exe. Configure a Quick Race for this ai code the track Corkscrew used and that laps are set to 3 while using driver Ensure scr_server 1.
-
-Launch Python Agent:
-Open your terminal (PowerShell, Command Prompt, or Bash) and navigate to the agent directory (C:\torcs\gym_torcs).
-
-# This command starts the client and connects to the TORCS server
-python torcs_jm_par_enhanced.py 
-
-Monitor Performance:
-The agent will take control of the car. Check the terminal output for real-time sensor readings and control decisions.
-
-📊 Competition Results:
-
-Competition Rank: 1st Place
-
-Best Lap Time: 01:45.321
+- TORCS installed and configured  
+  *(tested with the torcs_CAR package supplied in competition resources)*  
+- Python **3.14.0** or newer  
+- `gym_torcs` located at:  

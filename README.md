@@ -74,6 +74,8 @@ Open your terminal or PowerShell and navigate to the agent directory (C:\torcs\g
 python torcs_jm_par.py 
 
 
+
+
 Monitor Performance:
 The agent will take control of the car. Check the terminal output for real-time sensor readings and control decisions.
 
@@ -95,16 +97,26 @@ The agent was trained using a Deep Deterministic Policy Gradient (DDPG) algorith
 
 State Space: The state vector included 29 variables, such as track-edge distances, speed, RPM, and angle to track axis.
 
-Action Space: Continuous actions for steering ([-1, 1]), acceleration ([0, 1]), and braking ([0, 1]).
+Action Space: Continuous actions for steering (
+
+$$-1, 1$$
+
+), acceleration (
+
+$$0, 1$$
+
+), and braking (
+
+$$0, 1$$
+
+).
 
 Reward Function: The reward was shaped to prioritize high velocity while heavily penalizing off-track excursions, resulting in a focus on safety and sustained pace. Training was performed over 100,000 steps of environment interaction.
 
 🎓 Competition Video and Results
 
-Video Submission: [Link to your recorded video on YouTube/Vimeo/etc.]
+Competition Video: Cardiff Autonomous Racing TORCS Demonstration (Hosted on Google Drive)
 
-Competition Rank: (e.g., 1st Place / Top 5 / Finalist)
+Competition Rank: 1st Place Won
 
 Best Lap Time: (e.g., 01:45.321)
-
-Badges (Mark)
